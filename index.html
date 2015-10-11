@@ -32,27 +32,42 @@
 </head>
 
 <body>
+  
+  <!-- Page header section -->
   <h1 class="text-center title-background">Pomodoro Clock</h1>
+  
+  <!-- Break/Session Length Title section -->
   <div class="flex-container-timer-lengths">
     <div><h4>Break Length</h4></div>
     <div><h4>Session Length</h4></div>
   </div>
+  
+  <!-- Timer increment/decrement section -->
   <div class="text-center flex-container-timer-lengths">
     <div><i id="break-minus" class="fa fa-minus fa-2x button-pointer"></i></div>
     <div><h1 class="break-time-value">5</h1></div>
     <div><i id="break-plus" class="fa fa-plus fa-2x button-pointer"></i></div>
+    
     <div><i id="session-minus" class="fa fa-minus fa-2x button-pointer"></i></div>
     <div><h1 class="session-time-value">25</h1></div>
     <div><i id="session-plus" class="fa fa-plus fa-2x button-pointer"></i></div>
   </div>
+  
+  <!-- Start/stop button section -->
   <div class="flex-container">
     <!-- Big play button that transforms into big stop button -->
-    <!-- Need to change triangle-right and timer-text-triangle classes -->
-    <div id="shape-alignment" class="align-triangle"><div id="start-button" class="triangle button-pointer"><h1 id="timer-text" class="timer-text-triangle">25:00</h1></div></div>
+    <div id="shape-alignment" class="align-triangle">
+      <div id="start-button" class="triangle button-pointer">
+        <h1 id="timer-text" class="timer-text-triangle">25:00</h1>
+      </div>
+    </div>
   </div>
+  
+  <!-- Reset button section -->
   <div class="flex-container-button">
     <button class="btn btn-default btn-lg" type="submit">Reset</button>
   </div>
+
 </body>
 
 </html>
