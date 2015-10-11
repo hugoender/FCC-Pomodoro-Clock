@@ -1,7 +1,29 @@
+body > h1 {
+  margin-top: 0px;
+}
+
+div h1 {
+  margin: -10px;
+}
+
+.btn-default{
+  border-radius: 0;
+  background-color:#d4a2ff;
+}
+
 .flex-container {
   align-items: center;
   display: flex;
   justify-content: space-around;
+  margin: auto; /*prevents container from sticking to left side*/
+  width: 400px;
+}
+
+.flex-container-button {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
   margin: auto; /*prevents container from sticking to left side*/
   width: 400px;
 }
@@ -12,50 +34,44 @@
   justify-content: space-around;
   margin: auto; /*prevents container from sticking to left side*/
   width: 400px;
+  margin-top: 20px;
 }
 
-
-.left-text {
-  width: 100px;
+.title-background{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #76ddff;
 }
 
-/*
-.flex-item {
-  background: tomato;
-  padding: 5px;
-  width: 200px;
-  height: 150px;
-  margin-top: 10px;
-  
-  line-height: 150px;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
-}
-*/
-
+/* Need to find way to keep text at same location regardless of shape */
 .timer-text-triangle {
-  position:relative;
-  top: -40px;
-  left: -170px;
+  position: relative;
+  top: -9px;
+  left: -156px;
 }
 
 .timer-text-square{
   position: relative;
-  top: 70px;
-  left: 40px;
+  top: 66px;
+  left: 44px;
 }
+
+.timer-text-alignment{
+  position: static;
+  text-align: center;
+  padding-top: 60px;
+}
+/* -------- */
 
 .align-triangle{
   padding-top: 60px;
-  padding-left: 60px;
+  padding-left: 30px;
 }
 
 
 .align-square{
-  padding-top: 50px;
-  padding-left: 10px;
+  padding-top: 85px;
+  padding-left: 0;
 }
 
 /* css-tricks.com/examples/ShapesOfCSS/ */
@@ -71,4 +87,9 @@
   width: 170px;
   height: 170px;
   background: #ff6d6d;
+}
+/* --------- */
+
+.button-pointer{
+  cursor: pointer; 
 }
